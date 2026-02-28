@@ -1,0 +1,121 @@
+/* Configuración General */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.container {
+    width: 450px;
+    margin: 0 auto; 
+    padding: 100px;
+}
+
+/* Header */
+.header {
+    margin-bottom: 5px;
+}
+.logo-img { width: 80px; vertical-align: middle; border-radius: 10px; border: 1px solid #eecb05; }
+.logo-text { 
+    font-size: 50px; 
+    font-weight: bold; 
+    font-style: italic;
+    color: #161515; }
+
+/* Mapa Principal */
+.map-box {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #777;
+    border-radius: 10px;
+    position: relative;
+}
+
+.img_map {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #777;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+
+.google-pin {
+    width: 40px;
+    height: 60px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/d/d1/Google_Maps_pin.svg') no-repeat center/contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -30px 0 0 -20px;
+}
+
+/* Controles de Rango */
+.controls {
+    margin: 20px 0;
+    display: grid; /* Usamos Grid en lugar de Flex */
+    gap: 10px;
+    justify-content: center;
+}
+.row { display: block; text-align: right; }
+.row label { font-size: 14px; margin-right: 10px; }
+input[type="range"] { width: 150px; vertical-align: middle; }
+.range-yellow { accent-color: gold; }
+.range-purple { accent-color: purple; }
+
+/* Botón */
+.main-button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    background: white;
+    color: red;
+    text-decoration: none;
+    border: 1px solid #999;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* SEGUNDA PÁGINA: DISEÑO CON GRID */
+.grid-results {
+    display: grid;
+    grid-template-areas: 
+        "head head"
+        "best mmap"
+        "table table";
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+    gap: 15px;
+}
+
+.header-res { grid-area: head; border-bottom: 1px solid #999; padding-bottom: 10px; margin-bottom: 5px;}
+.map-text { font-size: 20px; color: #666; float: right; width: 150px; }
+
+.best-option { grid-area: best; padding-top: 5px;}
+
+.photo-container { position: relative; display: inline-block; border: 1px solid #fff; }
+.photo-container img { display: block; }
+.stamp {
+    position: absolute;
+    bottom: -5px;
+    left: -10px;
+    background: white;
+    color: red;
+    border: 2px solid red;
+    font-size: 20px;
+    padding: 2px;
+    font-weight: bold;
+    transform: rotate(-10deg);
+}
+
+.alternatives-section { grid-area: table; }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    font-size: 12px;
+}
+th, td { border: 1px solid #ccc; padding: 6px; text-align: center; }
+th { background: #f2f2f2; }
