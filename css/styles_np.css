@@ -1,0 +1,69 @@
+/* --- Estilos específicos para new_place.html --- */
+
+
+.header {
+    margin-bottom: 5px;
+}
+.logo-img { width: 80px; vertical-align: middle; border-radius: 10px; border: 1px solid #eecb05; }
+.logo-text { 
+    font-size: 25px; 
+    font-weight: bold; 
+    font-style: italic;
+    color: #161515; }
+
+
+.container {
+    width: 90%; /
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+.new-place {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.new-place__input, .new-product__input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.new-place label, .new-product__input label {
+    font-weight: bold;
+    color: #161515;
+}
+
+.new-place input[type="text"],
+.new-place textarea,
+.new-place input[type="file"] {
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+.new-place fieldset {
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.new-place fieldset legend {
+    font-weight: bold;
+    color: #161515;
+    padding: 0 5px;
+}
+
+/* Ajuste para que el checkbox y el input de precio no se vean tan raros */
+.new-place fieldset label {
+    display: inline-block;
+    margin-top: 10px;
+}

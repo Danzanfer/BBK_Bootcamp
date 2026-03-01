@@ -2,12 +2,13 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CheapCoffee - Results</title>
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/styles_np.css">
 </head>
 
 <body>
-<div class="container">
+<div class="container grid-results">
 
   <div class="header-res">
     <div class="logo-res">
@@ -15,5 +16,36 @@
       <span class="logo-text">CheapCoffee</span>
     </div>
   </div>
-</div>
-</body>
+    <main>
+        <h1>Nuevo lugar</h1>
+        <form method="get" class="new-place">
+            <div class="new-product__input">
+                <label for="title">Nombre</label>
+                <input type="text" name="title" id="title">
+
+            </div>
+            <div class="new-place__input">
+                <label for="description">Dirección</label>
+                <textarea name="description" id="description" rows="4" cols="40"></textarea>
+            </div>
+            <div class="new-product__input">
+                <label for="image">Imagen del lugar</label>
+                <input type="file" id="image" name="image" >
+            </div>
+            <fieldset>
+                <legend>Características</legend>
+                <label for="precio">Precio en euros </label>
+                <input type= "number" name="precio" id="precio">
+                <label for="precio">Sanitario </label>
+                <input type= "checkbox" name="Sanitario" id="sanitario">
+
+            </fieldset>
+            <a href="index.html" class="return-button">Salir</a>
+          </form>
+
+  <footer style="text-align: center; margin-top: 30px; color: #777; font-size: 14px; border-top: 1px solid #ccc; padding-top: 10px;">
+          &copy; 2026 CheapCoffee Inc.
+      </footer>
+
+</div> 
+</body>  

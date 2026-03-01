@@ -18,7 +18,7 @@ body {
 .logo-text { 
     font-size: 50px; 
     font-weight: bold; 
-    font-style: italic;
+    font-style: italic !important;
     color: #161515; }
 
 /* Mapa Principal */
@@ -119,3 +119,23 @@ table {
 }
 th, td { border: 1px solid #ccc; padding: 6px; text-align: center; }
 th { background: #f2f2f2; }
+
+
+.return-button{
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    background: white;
+    color: black;
+    text-decoration: none;  
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.logo-res .logo-text,
+.header .logo-text {                
+    font-style: italic;                
+    color: #161515;                
+}
