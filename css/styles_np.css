@@ -1,4 +1,3 @@
-/* --- Estilos específicos para new_place.html --- */
 
 
 .header {
@@ -66,4 +65,19 @@
 .new-place fieldset label {
     display: inline-block;
     margin-top: 10px;
+}
+
+/* Botón */
+.main-button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    background: white;
+    color: rgb(0, 157, 255);
+    text-decoration: none;
+    border: 1px solid #999;
+    font-weight: bold;
+    border-radius: 10px;
 }

@@ -1,13 +1,16 @@
 /* Configuración General */
 body {
+    padding: 8px;
     font-family: Arial, sans-serif;
     padding: 20px;
 }
 
 .container {
-    width: 450px;
+    max-width: 450px;
+    width: 100%;
     margin: 0 auto; 
-    padding: 100px;
+    padding: 20px;
+     gap: 18px;
 }
 
 /* Header */
@@ -32,7 +35,7 @@ body {
 
 .img_map {
     width: 100%;
-    height: 300px;
+    height: auto;
     border: 1px solid #777;
     border-radius: 10px;
     position: relative;
@@ -45,8 +48,8 @@ body {
     height: 60px;
     background: url('https://upload.wikimedia.org/wikipedia/commons/d/d1/Google_Maps_pin.svg') no-repeat center/contain;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 30%;
+    left: 30%;
     margin: -30px 0 0 -20px;
 }
 
@@ -59,7 +62,7 @@ body {
 }
 .row { display: block; text-align: right; }
 .row label { font-size: 14px; margin-right: 10px; }
-input[type="range"] { width: 150px; vertical-align: middle; }
+input[type="range"] { width: 100%; vertical-align: middle; }
 .range-yellow { accent-color: gold; }
 .range-purple { accent-color: purple; }
 
@@ -71,7 +74,7 @@ input[type="range"] { width: 150px; vertical-align: middle; }
     padding: 10px;
     text-align: center;
     background: white;
-    color: red;
+    color: rgb(0, 157, 255);
     text-decoration: none;
     border: 1px solid #999;
     font-weight: bold;
@@ -117,6 +120,7 @@ table {
     background: white;
     font-size: 12px;
 }
+
 th, td { border: 1px solid #ccc; padding: 6px; text-align: center; }
 th { background: #f2f2f2; }
 
@@ -139,3 +143,106 @@ th { background: #f2f2f2; }
     font-style: italic;                
     color: #161515;                
 }
+
+
+@media only screen and (max-width: 375px) {
+
+  .container {
+    padding: 8px;
+    min-height: 100vh;      
+    display: flex;
+    flex-direction: column; 
+    gap: 18px;
+  }
+
+  .logo-img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .logo-text {
+    font-size: 35px;
+    font-weight: bold; 
+    font-style: italic
+  }
+
+    .map-box {
+    width: 90%;          
+    height: 300px;       
+    margin: 0 auto;     
+  }
+
+  .img_map {
+    width: 100%;         
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .google-pin {
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    margin: -30px 0 0 -20px; 
+}
+
+
+footer {
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-top: 30px;
+}
+  
+
+}
+
+
+  .controls {
+    padding: 10px;
+    margin-bottom: 14px;
+  }
+
+  .controls .row {
+    margin-bottom: 10px;
+  }
+
+  .controls label {
+    font-size: 12px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;  /* label arriba, slider abajo */
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  input[type="range"] {
+    height: 5px;
+    width: 100%;
+    height: 5px;
+  }
+
+  .range-yellow::-webkit-slider-thumb,
+  .range-purple::-webkit-slider-thumb {
+    width: 14px;
+    height: 14px;
+  }
+
+  .main-button {
+  width: 90%;
+  padding: 8px;
+  font-size: 13px;
+  border-radius: 20px;
+  }
+
+  footer {
+    color: #bbb;        /* gris más claro */
+    font-size: 11px;
+    margin-top: 5px;
+    text-align: center;
+  }
